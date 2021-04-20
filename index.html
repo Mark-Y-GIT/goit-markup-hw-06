@@ -533,7 +533,7 @@
           </address>
         </div>
         <div class="footer-social">
-          <h3 class="footer-social-title">присоединяйтесь</h3>
+          <b class="footer-social-title">присоединяйтесь</b>
 
           <ul class="list social-icons">
             <li class="social-icons-item">
@@ -586,15 +586,95 @@
             </li>
           </ul>
         </div>
+
+        <div class="footer-form">
+          <b class="footer-social-title">Подпишитесь на рассылку</b>
+          <form class="footer-form-mail">
+            <input
+              class="footer-input-mail"
+              type="email"
+              name="user-mail"
+              placeholder="E-mail"
+            />
+            <button class="footer-button" type="submit">
+              Подписаться
+              <svg class="icon" width="24" height="24">
+                <use href="./images/icons/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
-    <div data-modal class="backdrop is-hidden">
+    <div data-modal class="backdrop">
       <div class="modal">
         <button data-modal-close class="modal-button">
           <svg class="icon" width="11" height="11">
             <use href="./images/icons/sprite.svg#icon-cross"></use>
           </svg>
         </button>
+        <b class="modal-header">Оставьте свои данные, мы вам перезвоним</b>
+        <form class="modal-form">
+          <label for="user-name" class="form-label">Имя</label>
+
+          <div class="form-input">
+            <input
+              class="modal-input modal-form-name"
+              type="text"
+              name="user-name"
+              placeholder=" "
+              id="user-name"
+            />
+            <svg class="icon" width="18" height="18">
+              <use href="./images/icons/sprite.svg#icon-person-black-18"></use>
+            </svg>
+          </div>
+
+          <label for="user-phone" class="form-label">Телефон</label>
+
+          <div class="form-input">
+            <input
+              type="tel"
+              class="modal-input modal-form-phone"
+              name="user-phone"
+              placeholder=" "
+              id="user-phone"
+            />
+            <svg class="icon" width="18" height="18">
+              <use href="./images/icons/sprite.svg#icon-phone-black-18"></use>
+            </svg>
+          </div>
+
+          <label for="modal-mail" class="form-label">Почта</label>
+          <div class="form-input">
+            <input
+              class="modal-input user-modal-mail"
+              type="email"
+              name="modal-mail"
+              placeholder=" "
+              id="modal-mail"
+            />
+            <svg class="icon" width="18" height="18">
+              <use href="./images/icons/sprite.svg#icon-email-black-18"></use>
+            </svg>
+          </div>
+
+          <label for="conditions" class="form-label">Комментарий</label>
+
+          <div class="form-input">
+            <textarea
+              class="modal-input modal-textarea"
+              name="feedback"
+              rows="6"
+              placeholder=" "
+              id="conditions"
+            ></textarea>
+          </div>
+
+          <input type="checkbox" name="conditions" />
+
+          <button class="footer-button" type="submit">Подписаться</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
