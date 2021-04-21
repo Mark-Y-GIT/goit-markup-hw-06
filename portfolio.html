@@ -306,6 +306,7 @@
       </section>
     </main>
     <!--подвал-->
+
     <footer class="dark-bg footer-content">
       <div class="container footer-container">
         <div class="footer-contacts">
@@ -339,7 +340,7 @@
           </address>
         </div>
         <div class="footer-social">
-          <h3 class="footer-social-title">присоединяйтесь</h3>
+          <b class="footer-social-title">присоединяйтесь</b>
 
           <ul class="list social-icons">
             <li class="social-icons-item">
@@ -391,6 +392,24 @@
               </a>
             </li>
           </ul>
+        </div>
+
+        <div class="footer-form">
+          <b class="footer-social-title">Подпишитесь на рассылку</b>
+          <form class="footer-form-mail">
+            <input
+              class="footer-input-mail"
+              type="email"
+              name="user-mail"
+              placeholder="E-mail"
+            />
+            <button class="footer-button" type="submit">
+              Подписаться
+              <svg class="icon" width="24" height="24">
+                <use href="./images/icons/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
