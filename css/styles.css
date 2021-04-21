@@ -950,6 +950,8 @@ textarea {
   /* identical to box height, or 171% */
   letter-spacing: 0.03em;
   color: #757575;
+
+  outline: 1px solid red;
 }
 
 .checkbox-wrap .link {
@@ -969,10 +971,18 @@ textarea {
   appearance: none;
 }
 
+.checkbox-wrap .icon {
+    position: absolute;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 2px solid orange;
+    border-radius: ;
+    top: 0px;
+    left: 0px;
+    transform: translatey(50%) translatex(-100%) translatex(-7px);
+    cursor: pointer;
+  }
+}
 .check-icon {
-  position: absolute;
-  width: 12px;
-  height: 12px;
-  background-color: red;
-  margin-right: 7px;
 }
