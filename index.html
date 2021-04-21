@@ -661,19 +661,29 @@
 
           <label for="conditions" class="form-label">Комментарий</label>
 
-          <div class="form-input">
+          <div class="form-input text-area">
             <textarea
-              class="modal-input modal-textarea"
+              class="modal-textarea"
               name="feedback"
               rows="6"
-              placeholder=" "
+              placeholder="Введите текст"
               id="conditions"
             ></textarea>
           </div>
+          <div class="checkbox-wrap">
+            <label>
+              <input
+                class="conditions-checkbox"
+                type="checkbox"
+                name="conditions-checkbox"
+                id="conditions-checkbox"
+              /><span class="check-icon"></span>Соглашаюсь с рассылкой и
+              принимаю
+            </label>
+            <a href="" class="link">Условия договора</a>
+          </div>
 
-          <input type="checkbox" name="conditions" />
-
-          <button class="footer-button" type="submit">Подписаться</button>
+          <!-- <button class="footer-button" type="submit">Подписаться</button> -->
         </form>
       </div>
     </div>
